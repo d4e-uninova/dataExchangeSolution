@@ -4,10 +4,8 @@ using System.Threading;
 
 namespace DataExchangeSolution
 {
-
     class Program
     {
-
         public static Object designBuilderLock = new Object();
         public static Object revitLock = new Object();
         public static Logger logger = new Logger("DataExchangeSolution");
