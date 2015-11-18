@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{98C5D035-0C5A-481D-9305-F48D88469F46}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataExchangeSolution</RootNamespace>
+    <AssemblyName>DataExchangeSolution</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GraphContainer.cs" />
+    <Compile Include="IDataSimulation.cs" />
+    <Compile Include="IDataTranslation.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\energyAnalysis\energyAnalysis\energyAnalysis.csproj">
+      <Project>{2680b558-75a6-410d-a6e2-9cd04f3acbd7}</Project>
+      <Name>energyAnalysis</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\gbXML2IDFConverter\gbXML2IDFConverter\gbXML2IDFConverter.csproj">
+      <Project>{517768c9-377f-4517-a5d3-57816f939df9}</Project>
+      <Name>gbXML2IDFConverter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ifc2gbXMLConverter\ifc2gbXMLConverter\ifc2gbXMLConverter.csproj">
+      <Project>{a009d7b8-9f4c-4d8e-93f0-e2402da2ada1}</Project>
+      <Name>ifc2gbXMLConverter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ifc2RVTConverter\ifc2RVTConverter\ifc2RVTConverter.csproj">
+      <Project>{6fc14f08-1c89-42d5-bbc1-64d53ca08483}</Project>
+      <Name>ifc2RVTConverter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Logger\Logger\Logger.csproj">
+      <Project>{479c8c12-a70b-40e0-97b7-ab75409bc155}</Project>
+      <Name>Logger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\rvt2gbXMLConverter\rvt2gbXMLConverter\rvt2gbXMLConverter.csproj">
+      <Project>{11865201-e390-4844-ab13-87e1be9f518e}</Project>
+      <Name>rvt2gbXMLConverter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\rvt2IFCConverter\rvt2IFCConverter\rvt2IFCConverter.csproj">
+      <Project>{e0519cff-079b-4a4c-aa47-0ba388dff57b}</Project>
+      <Name>rvt2IFCConverter</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
