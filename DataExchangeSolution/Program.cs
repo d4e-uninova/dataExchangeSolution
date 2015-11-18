@@ -14,7 +14,7 @@ namespace DataExchangeSolution
             try
             {
                 ServiceHost dataExchangeService = null;
-                Uri httpBaseAddress = new Uri(args.Length == 0 ? "http://127.0.0.1:8040" : args[0]);
+                Uri httpBaseAddress = new Uri(args.Length == 0 ? "http://127.0.0.1:8080" : args[0]);
  
                 dataExchangeService = new ServiceHost(typeof(Service), httpBaseAddress);
                 WSHttpBinding binding = new WSHttpBinding();
