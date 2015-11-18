@@ -2,7 +2,6 @@
 using System.ServiceModel;
 using System.Threading;
 
-
 namespace DataExchangeSolution
 {
     class Program
