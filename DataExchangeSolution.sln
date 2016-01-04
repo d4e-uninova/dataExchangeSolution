@@ -1,13 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataExchangeSolution", "DataExchangeSolution\DataExchangeSolution.csproj", "{98C5D035-0C5A-481D-9305-F48D88469F46}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ifc2gbXMLConverter", "..\ifc2gbXMLConverter\ifc2gbXMLConverter\ifc2gbXMLConverter.csproj", "{A009D7B8-9F4C-4D8E-93F0-E2402DA2ADA1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gbXML2IDFConverter", "..\gbXML2IDFConverter\gbXML2IDFConverter\gbXML2IDFConverter.csproj", "{517768C9-377F-4517-A5D3-57816F939DF9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ifc2RVTConverter", "..\ifc2RVTConverter\ifc2RVTConverter\ifc2RVTConverter.csproj", "{6FC14F08-1C89-42D5-BBC1-64D53CA08483}"
 EndProject
@@ -20,6 +18,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rvt2gbXMLConverter", "..\rvt2gbXMLConverter\rvt2gbXMLConverter\rvt2gbXMLConverter.csproj", "{11865201-E390-4844-AB13-87E1BE9F518E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FindAddress", "..\FindAddress\FindAddress\FindAddress.vcxproj", "{C0260A13-FED0-427D-BEDD-9AFDCE40DE46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gbXML2IDFConverter", "..\gbXML2IDFConverter.DesignBuilder\gbXML2IDFConverter\gbXML2IDFConverter.csproj", "{517768C9-377F-4517-A5D3-57816F939DF9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,16 +51,6 @@ Global
 		{A009D7B8-9F4C-4D8E-93F0-E2402DA2ADA1}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{A009D7B8-9F4C-4D8E-93F0-E2402DA2ADA1}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{A009D7B8-9F4C-4D8E-93F0-E2402DA2ADA1}.Release|Win32.ActiveCfg = Release|Any CPU
-		{517768C9-377F-4517-A5D3-57816F939DF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{517768C9-377F-4517-A5D3-57816F939DF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{517768C9-377F-4517-A5D3-57816F939DF9}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{517768C9-377F-4517-A5D3-57816F939DF9}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{517768C9-377F-4517-A5D3-57816F939DF9}.Debug|Win32.ActiveCfg = Debug|Any CPU
-		{517768C9-377F-4517-A5D3-57816F939DF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{517768C9-377F-4517-A5D3-57816F939DF9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{517768C9-377F-4517-A5D3-57816F939DF9}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{517768C9-377F-4517-A5D3-57816F939DF9}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{517768C9-377F-4517-A5D3-57816F939DF9}.Release|Win32.ActiveCfg = Release|Any CPU
 		{6FC14F08-1C89-42D5-BBC1-64D53CA08483}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6FC14F08-1C89-42D5-BBC1-64D53CA08483}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FC14F08-1C89-42D5-BBC1-64D53CA08483}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
@@ -121,6 +111,16 @@ Global
 		{C0260A13-FED0-427D-BEDD-9AFDCE40DE46}.Release|Mixed Platforms.Build.0 = Release|Win32
 		{C0260A13-FED0-427D-BEDD-9AFDCE40DE46}.Release|Win32.ActiveCfg = Release|Win32
 		{C0260A13-FED0-427D-BEDD-9AFDCE40DE46}.Release|Win32.Build.0 = Release|Win32
+		{517768C9-377F-4517-A5D3-57816F939DF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{517768C9-377F-4517-A5D3-57816F939DF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{517768C9-377F-4517-A5D3-57816F939DF9}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{517768C9-377F-4517-A5D3-57816F939DF9}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{517768C9-377F-4517-A5D3-57816F939DF9}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{517768C9-377F-4517-A5D3-57816F939DF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{517768C9-377F-4517-A5D3-57816F939DF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{517768C9-377F-4517-A5D3-57816F939DF9}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{517768C9-377F-4517-A5D3-57816F939DF9}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{517768C9-377F-4517-A5D3-57816F939DF9}.Release|Win32.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -76,7 +76,7 @@
       <Project>{2680b558-75a6-410d-a6e2-9cd04f3acbd7}</Project>
       <Name>energyAnalysis</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\gbXML2IDFConverter\gbXML2IDFConverter\gbXML2IDFConverter.csproj">
+    <ProjectReference Include="..\..\gbXML2IDFConverter.DesignBuilder\gbXML2IDFConverter\gbXML2IDFConverter.csproj">
       <Project>{517768c9-377f-4517-a5d3-57816f939df9}</Project>
       <Name>gbXML2IDFConverter</Name>
     </ProjectReference>
